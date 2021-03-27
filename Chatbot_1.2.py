@@ -63,3 +63,4 @@ while True:
         row = cursor.fetchone()
     B = row[1]
     cursor.execute('UPDATE sentences SET used=used+1 WHERE rowid=?', (row[0],))
+    
